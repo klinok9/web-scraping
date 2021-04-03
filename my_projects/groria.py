@@ -20,9 +20,13 @@ with open('index.html')as file:  # чтение сохран страницы
 soup = BeautifulSoup(src, 'lxml')
 name_product = soup.find_all('p',class_='list-card__description js-name-product')
 for item in name_product:
-    print(item.text)
-price = soup.find_all(class_='listing-card__price', attrs='span')
-for item in price:
+    print(item.text.strip())
+# price = soup.find_all(class_='listing-card__price', attrs='span')
+# for item in price:
+#     print(item.text.strip())
+
+price_1 = soup.find_all('span',class_='listing-card__price')
+for item in price_1:
     print(item.text.strip())
 # p = soup.find_all('span',class_='listing-card__price')
 # for span in price.span.find_all('span',recursive=False):
