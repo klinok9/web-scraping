@@ -44,7 +44,7 @@ headers = {'Accept': '*/*',
 
 
 # парсинг страниц в разделе аккум бат
-for i in range(1, 50):
+for i in range(48,49):
     url = f'https://electro-shop.ru/akkumulyatornoe_oborudovanie/?PAGEN_1={i}'
     print(url)
     req = requests.get(url, headers=headers)
@@ -82,7 +82,7 @@ for i in range(1, 50):
 #     json.dump(name_of_item, file , indent=4, ensure_ascii=False)
 # with open(f'data/index{i}.html', 'w')as file:  # запись страницы в файл
 #     file.write(name_of_item)
-    sleep(random.randrange(3, 5))
-    with open('index.html')as file:  # чтение сохран страницы
-        src = file.read()
+    sleep(random.randrange(1, 2))
+    # with open('index.html')as file:  # чтение сохран страницы
+    #     src = file.read()
 
