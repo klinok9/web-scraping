@@ -20,7 +20,7 @@ soup = BeautifulSoup(src, 'lxml')  # lxml название парсера
 #     print(item.text)  # получение содержимого тега
 
 
-# user_name = soup.find('div', class_='user__name')  #поиск class_='user__name'в <di> /html/body/div/div[1]/div[2]/div[1]/span
+# user_name = soup.find('div', class_='user__name')  #поиск class_='user__name'в <di> /html/body/div/div[2 ибп]/div[2]/div[2 ибп]/span
 # print(user_name.text.strip())
 
 # user_name = soup.find('div', class_='user__name').find('span').text

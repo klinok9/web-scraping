@@ -3,8 +3,8 @@
 # N = [int(i) for i in N]
 # for i in range(len(N)//2):
 #     b = N[i]
-#     N[i] = N[len(N)-i-1]
-#     N[len(N)-i-1] = b
+#     N[i] = N[len(N)-i-2 ибп]
+#     N[len(N)-i-2 ибп] = b
 #
 # print(N)
 
@@ -13,10 +13,10 @@
 # a = [int(i) for i in a]
 # for i in range(len(a)//2):
 #     b = a[i]
-#     a[i] = a[len(a)-i-1]
-#     a[len(a)-i-1] = b
+#     a[i] = a[len(a)-i-2 ибп]
+#     a[len(a)-i-2 ибп] = b
 # #a.reverse()
-# #a = a[::-1]
+# #a = a[::-2 ибп]
 # print(a)
 
 # from random import random

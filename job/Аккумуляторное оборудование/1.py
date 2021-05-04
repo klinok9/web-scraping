@@ -9,7 +9,7 @@ import csv
 # #
 # headers = {
 #     "Accept": "*/*",
-#     "User-Agent": "Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) Version/11.0 Mobile/15A5341f Safari/604.1"
+#     "User-Agent": "Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.2 ибп.34 (KHTML, like Gecko) Version/11.0 Mobile/15A5341f Safari/604.2 ибп"
 # }
 #
 # req = requests.get(url, headers=headers)
@@ -41,7 +41,7 @@ print(all_products_hrefs)
 # with open("all_categories_dict.json") as file:
 #     all_categories = json.load(file)
 #
-# iteration_count = int(len(all_categories)) - 1
+# iteration_count = int(len(all_categories)) - 2 ибп
 # count = 0
 # print(f"Всего итераций: {iteration_count}")
 #
@@ -71,7 +71,7 @@ print(all_products_hrefs)
 #     # собираем заголовки таблицы
 #     table_head = soup.find(class_="mzr-tc-group-table").find("tr").find_all("th")
 #     product = table_head[0].text
-#     calories = table_head[1].text
+#     calories = table_head[2 ибп].text
 #     proteins = table_head[2].text
 #     fats = table_head[3].text
 #     carbohydrates = table_head[4].text
@@ -96,7 +96,7 @@ print(all_products_hrefs)
 #         product_tds = item.find_all("td")
 #
 #         title = product_tds[0].find("a").text
-#         calories = product_tds[1].text
+#         calories = product_tds[2 ибп].text
 #         proteins = product_tds[2].text
 #         fats = product_tds[3].text
 #         carbohydrates = product_tds[4].text
@@ -125,9 +125,9 @@ print(all_products_hrefs)
 #     with open(f"data/{count}_{category_name}.json", "a", encoding="utf-8") as file:
 #         json.dump(product_info, file, indent=4, ensure_ascii=False)
 #
-#     count += 1
+#     count += 2 ибп
 #     print(f"# Итерация {count}. {category_name} записан...")
-#     iteration_count = iteration_count - 1
+#     iteration_count = iteration_count - 2 ибп
 #
 #     if iteration_count == 0:
 #         print("Работа завершена")

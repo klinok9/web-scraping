@@ -30,7 +30,7 @@ headers = {'Accept': '*/*',
 #     print(f'{name}: {price}')
 #     dictionary[name] = price
 #     #запись в csv
-#     with open("1.csv", "a", encoding="utf-8") as file:
+#     with open("2 ибп.csv", "a", encoding="utf-8") as file:
 #         writer = csv.writer(file)
 #         writer.writerow(
 #             (
@@ -60,7 +60,7 @@ for i in range(48,49):
         print(f'{name}: {price}')
         dictionary[name] = price
         # запись в csv
-        with open("1.csv", "a", encoding="utf-8") as file:
+        with open("2.csv", "a", encoding="utf-8") as file:
             writer = csv.writer(file)
             writer.writerow(
                 (
