@@ -11,7 +11,7 @@ headers = {'Accept': '*/*',
            }
 
 # парсинг страниц в разделе аккум бат
-for i in range(1,15):
+for i in range(1,2):
     url = f'https://electro-shop.ru/istochniki_bespereboynogo_pitaniya/?PAGEN_1={i}'
     print(url)
     req = requests.get(url, headers=headers)
@@ -25,9 +25,14 @@ for i in range(1,15):
         # name = soup.find('h2')
         price = item.span.text
         print(f'{name}: {price}')
+        #убираю Источник бесперебойного питания
+        # rep = ["Источник бесперебойного питания"]
+        # for item in rep:
+        #     if item in name:
+        #         name = name.replace(item, "")
         dictionary[name] = price
         # запись в csv
-        with open("1.csv", "a", encoding="utf-8") as file:
+        with open("2.csv", "a", encoding="utf-8") as file:
             writer = csv.writer(file)
             writer.writerow(
                 (
