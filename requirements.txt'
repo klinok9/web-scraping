@@ -1,0 +1,14 @@
+beautifulsoup4
+bs4
+certifi
+chardet
+idna
+img2pdf
+lxml
+pikepdf
+Pillow
+pkg-resources
+requests
+selenium
+soupsieve
+urllib3
